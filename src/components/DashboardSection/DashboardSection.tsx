@@ -5,7 +5,6 @@ import { useLanguage } from '../../context/LanguageContext'
 
 // Asset imports - Vite will process these correctly
 import DASHBOARD_IMAGE from '../../assets/dashboard-section.png'
-import DASHBOARD_VIDEO from '../../assets/Hero-video.mp4'
 
 export default function DashboardSection() {
   const { t } = useLanguage()
@@ -108,23 +107,6 @@ export default function DashboardSection() {
               {/* Glow Effect behind image */}
               <div className="absolute inset-0 bg-gradient-to-tr from-secondary/30 to-[#9C89B8]/30 blur-3xl rounded-full transform scale-90 -z-10" />
               
-              {/* Video playing behind the dashboard image */}
-              <m.div 
-                className="absolute top-[8%] left-[10%] w-[80%] h-[75%] rounded-lg overflow-hidden -z-10"
-                initial={{ opacity: 0 }}
-                whileInView={{ opacity: 1 }}
-                transition={{ duration: 0.8 }}
-              >
-                 <video
-                   src={DASHBOARD_VIDEO}
-                   className="w-full h-full object-cover opacity-80"
-                   autoPlay
-                   loop
-                   muted
-                   playsInline
-                 />
-              </m.div>
-
               <m.img 
                 src={DASHBOARD_IMAGE} 
                 alt="Zayna Dashboard Interface" 

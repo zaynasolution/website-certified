@@ -3,7 +3,8 @@ import { ChevronDown, Loader2 } from 'lucide-react'
 import { useEffect, useRef, useState, useMemo } from 'react'
 import { useLanguage } from '../../context/LanguageContext'
 
-// Asset imports - Vite will process these correctly
+// Asset imports - using relative paths assuming assets are in src/assets
+// Note: In a real project, these should be imported or passed as props
 import VIDEO_PATH from '../../assets/Hero-video.mp4'
 
 interface HeroSectionProps {
@@ -96,7 +97,7 @@ export default function HeroSection({ onLearnMore, onBookNow }: HeroSectionProps
   return (
     <section 
       ref={containerRef} 
-      className="relative h-[150vh] w-full overflow-hidden bg-[#FFF0ED]"
+      className="relative h-[150vh] w-full overflow-hidden"
       aria-label="Hero Section"
     >
       {/* Sticky Container */}
@@ -114,7 +115,7 @@ export default function HeroSection({ onLearnMore, onBookNow }: HeroSectionProps
             {!videoError ? (
               <>
                 {!isVideoLoaded && (
-                  <div className="absolute inset-0 flex items-center justify-center bg-[#FFF0ED] z-0">
+                  <div className="absolute inset-0 flex items-center justify-center z-0">
                     <Loader2 className="w-10 h-10 animate-spin text-[#F5AC73]" />
                   </div>
                 )}
