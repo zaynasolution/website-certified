@@ -3,9 +3,8 @@ import { ChevronDown, Loader2 } from 'lucide-react'
 import { useEffect, useRef, useState, useMemo } from 'react'
 import { useLanguage } from '../../context/LanguageContext'
 
-// Asset imports - using relative paths assuming assets are in src/assets
-// Note: In a real project, these should be imported or passed as props
-const VIDEO_PATH = '/src/assets/Hero-video.mp4'
+// Asset imports - Vite will process these correctly
+import VIDEO_PATH from '../../assets/Hero-video.mp4'
 
 interface HeroSectionProps {
   onLearnMore?: () => void

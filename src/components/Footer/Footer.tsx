@@ -3,8 +3,8 @@ import { MapPin, Phone, Mail, Instagram, Twitter, Linkedin, ArrowRight } from 'l
 import { Link } from 'react-router-dom'
 import { useLanguage } from '../../context/LanguageContext'
 
-// Asset imports
-const LOGO_PATH = '/src/assets/logo.png'
+// Asset import - Vite will process this correctly
+import LOGO_PATH from '../../assets/logo.png'
 
 export default function Footer() {
   const { t, setLang } = useLanguage()

@@ -3,9 +3,9 @@ import { m, useScroll, useTransform } from 'framer-motion'
 import DashboardCard from './DashboardCard'
 import { useLanguage } from '../../context/LanguageContext'
 
-// Assets
-const DASHBOARD_IMAGE = '/src/assets/dashboard-section.png'
-const DASHBOARD_VIDEO = '/src/assets/Hero-video.mp4'
+// Asset imports - Vite will process these correctly
+import DASHBOARD_IMAGE from '../../assets/dashboard-section.png'
+import DASHBOARD_VIDEO from '../../assets/Hero-video.mp4'
 
 export default function DashboardSection() {
   const { t } = useLanguage()

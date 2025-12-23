@@ -3,11 +3,11 @@ import ZaynaCard from './ZaynaCard'
 import { useLanguage } from '../../context/LanguageContext'
 import GlowingCircles from '../GlowingCircles/GlowingCircles'
 
-// Image paths - assumes assets are in src/assets/
-const LOGO_PATH = '/src/assets/logo.png'
-const CALENDAR_ICON = '/src/assets/calender-emoji.png'
-const LOCATION_ICON = '/src/assets/location.gif'
-const GIFT_ICON = '/src/assets/woman-gift.gif'
+// Image imports - Vite will process these correctly
+import LOGO_PATH from '../../assets/logo.png'
+import CALENDAR_ICON from '../../assets/calender-emoji.png'
+import LOCATION_ICON from '../../assets/location.gif'
+import GIFT_ICON from '../../assets/woman-gift.gif'
 
 export default function ZaynaCardsSection() {
   const { t } = useLanguage()

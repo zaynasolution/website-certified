@@ -2,7 +2,8 @@ import { useEffect, useMemo, useState } from 'react'
 import { Link, NavLink } from 'react-router-dom'
 import { useLanguage } from '../context/LanguageContext'
 
-const LOGO_PATH = '/src/assets/logo.png'
+// Asset import - Vite will process this correctly
+import LOGO_PATH from '../assets/logo.png'
 
 export default function Header() {
   const { t, lang, setLang } = useLanguage()

@@ -5,6 +5,11 @@ import Footer from '../components/Footer'
 import DownloadAppCard from '../components/JoinAppSection/DownloadAppCard'
 import { useLanguage } from '../context/LanguageContext'
 
+// Asset imports - Vite will process these correctly
+import GPS_IMAGE from '../assets/gps.png'
+import IMAGE1 from '../assets/image1.png'
+import ZAYNA_PAGE1 from '../assets/zaynapage1.jpg'
+
 // Animation variants
 const fadeInUp = {
   hidden: { opacity: 0, y: 30 },
@@ -28,7 +33,7 @@ export default function Zayna() {
         t('zayna_feat1_bullet4')
       ],
       color: '#F5AC73',
-      image: '/src/assets/gps.png'
+      image: GPS_IMAGE
     },
     {
       id: 2,
@@ -44,7 +49,7 @@ export default function Zayna() {
         t('zayna_feat2_bullet5')
       ],
       color: '#EFC7C2',
-      image: '/src/assets/image1.png'
+      image: IMAGE1
     },
     {
       id: 3,
@@ -59,7 +64,7 @@ export default function Zayna() {
         t('zayna_feat3_bullet4')
       ],
       color: '#9C89B8',
-      image: '/src/assets/zaynapage1.jpg'
+      image: ZAYNA_PAGE1
     },
     {
       id: 4,

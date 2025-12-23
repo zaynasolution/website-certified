@@ -4,7 +4,8 @@ import { BookMeta } from './meta'
 import ContactForm from '../components/ContactForm'
 import Footer from '../components/Footer'
 
-const BOOK_NOW_IMAGE = '/src/assets/bookNow.jpg'
+// Asset import - Vite will process this correctly
+import BOOK_NOW_IMAGE from '../assets/bookNow.jpg'
 
 export default function BookNow() {
   return (

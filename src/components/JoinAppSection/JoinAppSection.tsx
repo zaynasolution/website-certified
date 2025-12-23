@@ -4,8 +4,8 @@ import AnimatedCounter from './AnimatedCounter'
 import DownloadAppCard from './DownloadAppCard'
 import { useLanguage } from '../../context/LanguageContext'
 
-// Assets
-const PROMOTE_ICON = '/src/assets/promote.gif'
+// Asset import - Vite will process this correctly
+import PROMOTE_ICON from '../../assets/promote.gif'
 
 export default function JoinAppSection() {
   const { t } = useLanguage()
