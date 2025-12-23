@@ -1,5 +1,4 @@
 import { motion } from 'framer-motion'
-import { scaleUp } from '../utils/animationVariants'
 import { BookMeta } from './meta'
 import ContactForm from '../components/ContactForm'
 import Footer from '../components/Footer'
